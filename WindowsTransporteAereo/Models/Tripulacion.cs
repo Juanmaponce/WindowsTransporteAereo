@@ -12,7 +12,7 @@ namespace WindowsTransporteAereo.Models
         {
             Piloto = piloto;
             Copiloto = copiloto;
-            Azafatas = null;
+            Azafatas = new List<Azafata>();
         }
 
         public Piloto Piloto { get; set; }

@@ -26,6 +26,7 @@ namespace WindowsTransporteAereo
             Azafata azafata = new Azafata("Juana", "Sanchez");
             tripulacion.AgregarAzafata(azafata);
             Jett jett = new Jett(150, (decimal)100.4, 5, tripulacion);
+            dataGridView1.DataSource = tripulacion.Azafatas;
             MessageBox.Show(jett.Despegar("pista1"));
             MessageBox.Show(jett.Aterrizar("pista1"));
         }
